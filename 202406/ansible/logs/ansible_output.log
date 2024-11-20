@@ -1,0 +1,98 @@
+2024-06-24 18:08:06,499 p=3444395 u=upszot n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-06-24 18:08:06,598 p=3444395 u=upszot n=ansible | PLAY [all] **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:06,609 p=3444395 u=upszot n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,746 p=3444395 u=upszot n=ansible | ok: [localhost]
+2024-06-24 18:08:07,775 p=3444395 u=upszot n=ansible | TASK [include_role : 2do_parcial] ***********************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,805 p=3444395 u=upszot n=ansible | TASK [2do_parcial : debug] ******************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,817 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-06-24 18:08:07,836 p=3444395 u=upszot n=ansible | TASK [Otra tarea] ***************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,851 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 19:41:43,016 p=11431 u=gonzalez n=ansible | [WARNING]: Unable to parse /home/gonzalez/UTN-FRA_SO_Examenes/202406/ansible/hosts as an inventory source
+
+2024-11-19 19:41:43,017 p=11431 u=gonzalez n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-11-19 19:41:43,023 p=11431 u=gonzalez n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-11-19 19:41:43,262 p=11431 u=gonzalez n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/home/gonzalez/UTN-FRA_SO_Examenes/202406/ansible/playbook.yml': line 2, column 8, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+------
+- hosts: all
+       ^ here
+
+2024-11-19 19:48:19,045 p=11478 u=gonzalez n=ansible | [WARNING]: Unable to parse /home/gonzalez/UTN-FRA_SO_Examenes/202406/ansible/hosts as an inventory source
+
+2024-11-19 19:48:19,045 p=11478 u=gonzalez n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-11-19 19:48:19,048 p=11478 u=gonzalez n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-11-19 19:48:19,248 p=11478 u=gonzalez n=ansible | PLAY [all] ******************************************************************************************************************
+2024-11-19 19:48:19,248 p=11478 u=gonzalez n=ansible | skipping: no hosts matched
+2024-11-19 19:48:19,248 p=11478 u=gonzalez n=ansible | PLAY RECAP ******************************************************************************************************************
+2024-11-19 20:29:14,721 p=11745 u=gonzalez n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-11-19 20:29:14,725 p=11745 u=gonzalez n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-11-19 20:29:14,891 p=11745 u=gonzalez n=ansible | PLAY [all] ******************************************************************************************************************
+2024-11-19 20:29:14,891 p=11745 u=gonzalez n=ansible | skipping: no hosts matched
+2024-11-19 20:29:14,891 p=11745 u=gonzalez n=ansible | PLAY RECAP ******************************************************************************************************************
+2024-11-19 20:30:35,249 p=11764 u=gonzalez n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-11-19 20:30:35,253 p=11764 u=gonzalez n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-11-19 20:30:35,420 p=11764 u=gonzalez n=ansible | PLAY [localhost] ************************************************************************************************************
+2024-11-19 20:30:35,430 p=11764 u=gonzalez n=ansible | TASK [Gathering Facts] ******************************************************************************************************
+2024-11-19 20:30:36,467 p=11764 u=gonzalez n=ansible | ok: [localhost]
+2024-11-19 20:30:36,483 p=11764 u=gonzalez n=ansible | TASK [include_role : 2do_parcial] *******************************************************************************************
+2024-11-19 20:30:36,525 p=11764 u=gonzalez n=ansible | TASK [2do_parcial : Crear directorio /tmp/2do_parcial/alumnos] **************************************************************
+2024-11-19 20:30:36,838 p=11764 u=gonzalez n=ansible | changed: [localhost]
+2024-11-19 20:30:36,845 p=11764 u=gonzalez n=ansible | TASK [2do_parcial : Crear directorio /tmp/2do_parcial/equipo] ***************************************************************
+2024-11-19 20:30:37,036 p=11764 u=gonzalez n=ansible | changed: [localhost]
+2024-11-19 20:30:37,044 p=11764 u=gonzalez n=ansible | TASK [2do_parcial : Crear archivo datos_alumno.txt] *************************************************************************
+2024-11-19 20:30:37,600 p=11764 u=gonzalez n=ansible | changed: [localhost]
+2024-11-19 20:30:37,607 p=11764 u=gonzalez n=ansible | TASK [2do_parcial : Crear archivo datos_equipo.txt] *************************************************************************
+2024-11-19 20:30:37,973 p=11764 u=gonzalez n=ansible | changed: [localhost]
+2024-11-19 20:30:37,981 p=11764 u=gonzalez n=ansible | TASK [2do_parcial : Configurar sudoers para 2PSupervisores sin contraseña] **************************************************
+2024-11-19 20:30:38,365 p=11764 u=gonzalez n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: PermissionError: [Errno 13] Permission denied: b'/etc/sudoers'
+2024-11-19 20:30:38,366 p=11764 u=gonzalez n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "module_stderr": "Traceback (most recent call last):\n  File \"/home/gonzalez/.ansible/tmp/ansible-tmp-1732066237.9940038-11985-205721262519086/AnsiballZ_lineinfile.py\", line 107, in <module>\n    _ansiballz_main()\n  File \"/home/gonzalez/.ansible/tmp/ansible-tmp-1732066237.9940038-11985-205721262519086/AnsiballZ_lineinfile.py\", line 99, in _ansiballz_main\n    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)\n  File \"/home/gonzalez/.ansible/tmp/ansible-tmp-1732066237.9940038-11985-205721262519086/AnsiballZ_lineinfile.py\", line 47, in invoke_module\n    runpy.run_module(mod_name='ansible.modules.lineinfile', init_globals=dict(_module_fqn='ansible.modules.lineinfile', _modlib_path=modlib_path),\n  File \"<frozen runpy>\", line 226, in run_module\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/tmp/ansible_lineinfile_payload_62t4f0gv/ansible_lineinfile_payload.zip/ansible/modules/lineinfile.py\", line 638, in <module>\n  File \"/tmp/ansible_lineinfile_payload_62t4f0gv/ansible_lineinfile_payload.zip/ansible/modules/lineinfile.py\", line 628, in main\n  File \"/tmp/ansible_lineinfile_payload_62t4f0gv/ansible_lineinfile_payload.zip/ansible/modules/lineinfile.py\", line 317, in present\nPermissionError: [Errno 13] Permission denied: b'/etc/sudoers'\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+2024-11-19 20:30:38,367 p=11764 u=gonzalez n=ansible | PLAY RECAP ******************************************************************************************************************
+2024-11-19 20:30:38,367 p=11764 u=gonzalez n=ansible | localhost                  : ok=5    changed=4    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-19 20:32:44,392 p=12013 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-11-19 20:32:44,396 p=12013 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-11-19 20:32:44,567 p=12013 u=root n=ansible | PLAY [localhost] ************************************************************************************************************
+2024-11-19 20:32:44,573 p=12013 u=root n=ansible | TASK [Gathering Facts] ******************************************************************************************************
+2024-11-19 20:32:45,614 p=12013 u=root n=ansible | ok: [localhost]
+2024-11-19 20:32:45,629 p=12013 u=root n=ansible | TASK [include_role : 2do_parcial] *******************************************************************************************
+2024-11-19 20:32:45,672 p=12013 u=root n=ansible | TASK [2do_parcial : Crear directorio /tmp/2do_parcial/alumnos] **************************************************************
+2024-11-19 20:32:45,980 p=12013 u=root n=ansible | ok: [localhost]
+2024-11-19 20:32:45,987 p=12013 u=root n=ansible | TASK [2do_parcial : Crear directorio /tmp/2do_parcial/equipo] ***************************************************************
+2024-11-19 20:32:46,183 p=12013 u=root n=ansible | ok: [localhost]
+2024-11-19 20:32:46,190 p=12013 u=root n=ansible | TASK [2do_parcial : Crear archivo datos_alumno.txt] *************************************************************************
+2024-11-19 20:32:46,683 p=12013 u=root n=ansible | ok: [localhost]
+2024-11-19 20:32:46,690 p=12013 u=root n=ansible | TASK [2do_parcial : Crear archivo datos_equipo.txt] *************************************************************************
+2024-11-19 20:32:47,078 p=12013 u=root n=ansible | ok: [localhost]
+2024-11-19 20:32:47,085 p=12013 u=root n=ansible | TASK [2do_parcial : Configurar sudoers para 2PSupervisores sin contraseña] **************************************************
+2024-11-19 20:32:47,404 p=12013 u=root n=ansible | changed: [localhost]
+2024-11-19 20:32:47,420 p=12013 u=root n=ansible | TASK [Otra tarea] ***********************************************************************************************************
+2024-11-19 20:32:47,440 p=12013 u=root n=ansible | ok: [localhost] => {
+    "msg": "Después de la ejecución del rol"
+}
+2024-11-19 20:32:47,466 p=12013 u=root n=ansible | PLAY RECAP ******************************************************************************************************************
+2024-11-19 20:32:47,467 p=12013 u=root n=ansible | localhost                  : ok=7    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

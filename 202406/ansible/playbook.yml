@@ -1,0 +1,18 @@
+---
+- hosts: localhost
+  vars:
+    nombre: "tu-nombre"
+    apellido: "tu-apellido"
+    division: "tu-division"
+    ip: "tu-ip"
+    distro: "tu-distro"
+    cores: "tu-cantidad-de-cores"
+
+  tasks:
+    - include_role:
+        name: 2do_parcial
+
+    - name: "Otra tarea"
+      debug:
+        msg: "Después de la ejecución del rol"
+

@@ -1,0 +1,8 @@
+---
+# defaults file for 2do_parcial
+nombre: "tomas"
+apellido: "gonzalez"
+division: "113"
+ip: "172.17.0.1"
+distro: "Ubuntu 24.04.1 LTS (Noble Numbat)"
+cores: "2"
